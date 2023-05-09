@@ -1,0 +1,124 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 4px solid red;
+    padding: 10px 35px;
+    color: #000000;
+	background-color: #c1c1c1;
+    height: 68px;
+}
+
+nav a{
+    font-size: 1.4em;
+    text-decoration: none;
+    font-weight: 100px;
+    transition: 0.2s;
+}
+
+
+
+nav a:hover{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #DAFF00;
+    font-size: 2em;
+    color: black;
+}
+
+nav a:active{
+    animation: font-scale 0.2s ease-in-out
+}
+
+
+@keyframes font-scale {
+    from {
+      font-size: 2em; /* Set the starting font size */
+    }
+    to {
+      font-size: 2.3em; /* Set the ending font size */
+    }
+}
+
+.campfire {
+    width: 30%;
+    height: 35em;
+    background-image: url('/photos/image.png');
+    background-size: cover;
+    animation: fire-animation 1s infinite;
+    margin-top: 5em;
+    margin-left:35.55% ;
+    margin-right: 30%;
+}
+
+    @keyframes fire-animation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+button{
+    background-color: #b2d004;
+    font-size: 25px;
+    height: 40px;
+    width: 100px;
+    transition: 0.2s;
+    margin-left: 36.5em;
+    margin-top: 3em;
+    margin-bottom: 20px;
+}
+
+button:hover{
+    margin-left: 36.3em;
+    border-radius: 20px;
+    height: 45px;
+    width: 105px;
+    margin-bottom: 15px;
+}
+
+button:active{
+    transform: scale(1.2);
+}
+
+button a{
+    color: black;
+    text-decoration: none;
+}
+
+.link{
+    width: 10px;
+}
+
+footer{
+    margin-top: 8.5%;
+    height: 80px;
+    background-color: #95c700;
+}
+
+.gmi{
+    margin-top: 7.5px;
+    margin-left: 48.6%;
+    width: 60px;
+    transition: 0.1s;
+}
+
+.gmi:hover{
+    width: 65px;
+    margin-left: 48.50%;
+}
